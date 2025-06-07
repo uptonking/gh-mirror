@@ -82,14 +82,17 @@ func baseCmd() {
 func cloneRepo(repo string) {
 	changeWorkDirToRoot()
 	cloneCmd := "git"
-	cloneArgs := []string{"clone", "--mirror", fmt.Sprintf("https://github.com/%s", repo), repo}
+	// cloneArgs := []string{"clone", "--mirror", fmt.Sprintf("https://github.com/%s", repo), repo}
+	cloneArgs := []string{"clone", "-v", fmt.Sprintf("git@github.com:%s.git", repo), repo}
 	runCommand(cloneCmd, cloneArgs)
 }
 
 func updateRepo(repo string) {
 	changeWorkDirToRepo(repo)
 	updateCmd := "git"
-	updateArgs := []string{"remote", "-v", "update"}
+	// updateArgs := []string{"remote", "-v", "update"}
+	//--rebase[=(false|true|merges|interactive)]
+	updateArgs := []string{"pull", "-r"}
 	runCommand(updateCmd, updateArgs)
 }
 

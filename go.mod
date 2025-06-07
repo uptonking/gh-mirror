@@ -1,3 +1,3 @@
-module github.com/ntns/gh-mirror
+module github.com/uptonking/gh-mirror
 
-go 1.19
+go 1.24.2
