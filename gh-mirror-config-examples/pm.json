@@ -1,0 +1,29 @@
+{
+  "sleepDuration": 2,
+  "repos": [
+    "ProseMirror/website",
+    "ProseMirror/prosemirror",
+    "ProseMirror/prosemirror-view",
+    "ProseMirror/prosemirror-state",
+    "ProseMirror/prosemirror-model",
+    "ProseMirror/prosemirror-transform",
+    "ProseMirror/prosemirror-history",
+    "ProseMirror/prosemirror-commands",
+    "ProseMirror/prosemirror-collab",
+    "ProseMirror/prosemirror-keymap",
+    "ProseMirror/prosemirror-inputrules",
+    "ProseMirror/prosemirror-example-setup",
+    "ProseMirror/prosemirror-schema-basic",
+    "ProseMirror/prosemirror-schema-list",
+    "ProseMirror/prosemirror-schema-schema-table",
+    "ProseMirror/prosemirror-changeset",
+    "ProseMirror/prosemirror-menu",
+    "ProseMirror/prosemirror-tables",
+    "ProseMirror/prosemirror-markdown",
+    "ProseMirror/prosemirror-dropcursor",
+    "ProseMirror/prosemirror-gapcursor",
+    "ProseMirror/prosemirror-search",
+    "ProseMirror/prosemirror-test-builder",
+    "ProseMirror/buildhelper"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "sleepDuration": 2,
+  "repos": [
+    "ueberdosis/tiptap",
+    "ueberdosis/hocuspocus",
+    "ueberdosis/y-tiptap",
+    "ueberdosis/tiptap-ui-components",
+    "TypeCellOS/BlockNote",
+    "prosekit/prosekit",
+    "prosekit/prosemirror-adapter",
+    "prosekit/examples",
+    "ianstormtaylor/slate",
+    "slab/quill",
+    "slab/delta",
+    "slab/parchment",
+    "typewriter-editor/typewriter",
+    "typewriter-editor/delta",
+    "typewriter-editor/typewriter-document",
+    "typewriter-editor/json-patch"
+  ]
+}

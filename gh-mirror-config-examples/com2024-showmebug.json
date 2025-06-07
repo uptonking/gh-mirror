@@ -1,0 +1,16 @@
+{
+  "sleepDuration": 2,
+  "repos": [
+    "clacky-ai/clacky-ai-frontend",
+    "clacky-ai/clacky-ai-backend",
+    "clacky-ai/clacky-ai-agent",
+    "clacky-ai/clacky-ai-paas-frontend",
+    "clacky-ai/clacky-ai-paas-backend",
+    "clacky-ai/clacky-ai-paas-agent",
+    "clacky-ai/clacky-ai-paas-gateway",
+    "clacky-ai/clacky-ai-paas-engine",
+    "clacky-ai/clacky-ai-paas-ssh-gateway",
+    "clacky-ai/clacky-ai-paas-affinity-gateway",
+    "clacky-ai/clacky-ai-paas-docker"
+  ]
+}
