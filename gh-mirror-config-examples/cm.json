@@ -1,5 +1,5 @@
 {
-  "sleepDuration": 2,
+  "sleepDuration": 1,
   "repos": [
     "codemirror/codemirror5",
     "codemirror/website",

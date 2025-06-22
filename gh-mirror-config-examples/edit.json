@@ -1,5 +1,5 @@
 {
-  "sleepDuration": 2,
+  "sleepDuration": 1,
   "repos": [
     "ueberdosis/tiptap",
     "ueberdosis/hocuspocus",
@@ -16,6 +16,9 @@
     "typewriter-editor/typewriter",
     "typewriter-editor/delta",
     "typewriter-editor/typewriter-document",
-    "typewriter-editor/json-patch"
+    "typewriter-editor/json-patch",
+    "didi/LogicFlow",
+    "maxGraph/maxGraph",
+    "maxGraph/maxgraph-integration-examples"
   ]
 }

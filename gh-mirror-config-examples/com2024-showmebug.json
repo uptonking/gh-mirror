@@ -1,5 +1,5 @@
 {
-  "sleepDuration": 2,
+  "sleepDuration": 1,
   "repos": [
     "clacky-ai/clacky-ai-frontend",
     "clacky-ai/clacky-ai-backend",

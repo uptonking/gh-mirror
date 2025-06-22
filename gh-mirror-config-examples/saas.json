@@ -1,0 +1,19 @@
+{
+  "sleepDuration": 1,
+  "repos": [
+    "django/django",
+    "encode/django-rest-framework",
+    "knex/knex",
+    "typeorm/typeorm",
+    "rrweb-io/rrweb",
+    "prevwong/reka.js",
+    "prevwong/craft.js",
+    "codesandbox/codesandbox-client",
+    "codesandbox/sandpack",
+    "strapi/strapi",
+    "strapi/strapi-plugin-seo",
+    "strapi/blocks-react-renderer",
+    "gristlabs/grist-core",
+    "nocodb/nocodb"
+  ]
+}
