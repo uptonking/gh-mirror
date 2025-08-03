@@ -15,7 +15,7 @@
     "ProseMirror/prosemirror-example-setup",
     "ProseMirror/prosemirror-schema-basic",
     "ProseMirror/prosemirror-schema-list",
-    "ProseMirror/prosemirror-schema-schema-table",
+    "ProseMirror/prosemirror-schema-table",
     "ProseMirror/prosemirror-changeset",
     "ProseMirror/prosemirror-menu",
     "ProseMirror/prosemirror-tables",
@@ -24,6 +24,23 @@
     "ProseMirror/prosemirror-gapcursor",
     "ProseMirror/prosemirror-search",
     "ProseMirror/prosemirror-test-builder",
-    "ProseMirror/buildhelper"
+    "ProseMirror/buildhelper",
+    "TeemuKoivisto/prosemirror-dev-toolkit",
+    "d4rkr00t/prosemirror-dev-tools",
+    "handlewithcarecollective/prosemirror-suggest-changes",
+    "handlewithcarecollective/react-prosemirror",
+    "handlewithcarecollective/remark-prosemirror",
+    "ueberdosis/tiptap",
+    "ueberdosis/hocuspocus",
+    "ueberdosis/y-tiptap",
+    "ueberdosis/tiptap-ui-components",
+    "TypeCellOS/BlockNote",
+    "prosekit/prosekit",
+    "prosekit/prosemirror-adapter",
+    "prosekit/examples",
+    "ocavue/prosemirror-playground",
+    "ccorcos/prosemirror-examples",
+    "marekdedic/prosemirror-unified",
+    "marekdedic/prosemirror-remark"
   ]
 }

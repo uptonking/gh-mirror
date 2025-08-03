@@ -23,6 +23,13 @@
     "codemirror/legacy-modes",
     "codemirror/lsp-client",
     "codemirror/theme-one-dark",
-    "codemirror/buildhelper"
+    "codemirror/buildhelper",
+    "davidmyersdev/ink-mde",
+    "replit/codemirror-minimap",
+    "val-town/codemirror-ts",
+    "overleaf/codemirror-tree-view",
+    "uiwjs/react-markdown-editor",
+    "uiwjs/react-codemirror",
+    "uiwjs/react-code-preview"
   ]
 }
