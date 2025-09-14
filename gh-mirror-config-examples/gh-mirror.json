@@ -21,7 +21,6 @@
     "ariakit/ariakit",
     "algolia/autocomplete",
     "algolia/instantsearch",
-    "motiondivision/motion",
     "mathuo/dockview",
     "reduxjs/redux",
     "reduxjs/redux-toolkit",
@@ -213,7 +212,6 @@
     "strapi/strapi",
     "strapi/strapi-plugin-seo",
     "strapi/blocks-react-renderer",
-    "gristlabs/grist-core",
-    "nocodb/nocodb"
+    "gristlabs/grist-core"
   ]
 }

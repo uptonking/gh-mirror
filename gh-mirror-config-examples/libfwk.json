@@ -21,7 +21,6 @@
     "ariakit/ariakit",
     "algolia/autocomplete",
     "algolia/instantsearch",
-    "motiondivision/motion",
     "mathuo/dockview",
     "reduxjs/redux",
     "reduxjs/redux-toolkit",

@@ -13,7 +13,6 @@
     "strapi/strapi",
     "strapi/strapi-plugin-seo",
     "strapi/blocks-react-renderer",
-    "gristlabs/grist-core",
-    "nocodb/nocodb"
+    "gristlabs/grist-core"
   ]
 }
