@@ -75,7 +75,7 @@
     "ProseMirror/prosemirror-example-setup",
     "ProseMirror/prosemirror-schema-basic",
     "ProseMirror/prosemirror-schema-list",
-    "ProseMirror/prosemirror-schema-schema-table",
+    "ProseMirror/prosemirror-schema-table",
     "ProseMirror/prosemirror-changeset",
     "ProseMirror/prosemirror-menu",
     "ProseMirror/prosemirror-tables",
