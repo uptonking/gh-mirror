@@ -34,7 +34,6 @@
     "val-town/codemirror-ts",
     "overleaf/codemirror-tree-view",
     "uiwjs/react-markdown-editor",
-    "uiwjs/react-codemirror",
-    "uiwjs/react-code-preview"
+    "uiwjs/react-codemirror"
   ]
 }

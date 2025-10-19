@@ -9,7 +9,6 @@
     "tanstack/form",
     "tanstack/select",
     "tanstack/ranger",
-    "tanstack/create-tsrouter-app",
     "tanstack/pacer",
     "tanstack/db",
     "tanstack/config",
@@ -20,8 +19,6 @@
     "atlassian/prosemirror-utils",
     "ariakit/ariakit",
     "algolia/autocomplete",
-    "algolia/instantsearch",
-    "mathuo/dockview",
     "reduxjs/redux",
     "reduxjs/redux-toolkit",
     "reduxjs/react-redux",
@@ -62,6 +59,15 @@
     "unifiedjs/unified-language-server",
     "unifiedjs/unified-stream",
     "rehypejs/rehype",
-    "retextjs/retext"
+    "retextjs/retext",
+    "knex/knex",
+    "typeorm/typeorm",
+    "go-gorm/gorm",
+    "expressjs/express",
+    "koajs/koa",
+    "gin-gonic/gin",
+    "rrweb-io/rrweb",
+    "prevwong/reka.js",
+    "prevwong/craft.js"
   ]
 }
