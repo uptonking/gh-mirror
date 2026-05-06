@@ -1,0 +1,13 @@
+{
+ "sleepDuration": 1,
+ "repos": [
+  "owner/repo",
+  "ssh://git@code.haverbeke.berlin/codemirror/merge",
+  "https://code.haverbeke.berlin/codemirror/merge.git",
+  "git@gitlab.com:fdroid/fdroidclient.git",
+  {
+   "url": "https://code.haverbeke.berlin/codemirror/merge",
+   "path": "custom/codemirror-merge"
+  }
+ ]
+}

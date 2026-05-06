@@ -42,10 +42,13 @@ func initCmd() {
 	createConfig()
 }
 
-func addCmd(repo string) {
-	if !isValidRepoPath(repo) {
+func addCmd(repoArg string) {
+	repo, err := parseRepoArg(repoArg)
+	if err != nil {
 		log.Printf("usage: gh-mirror -add username/repo")
-		log.Fatalf("repo path is invalid: %v", repo)
+		log.Printf("   or: gh-mirror -add git@example.com:org/repo.git")
+		log.Printf("   or: gh-mirror -add https://example.com/org/repo")
+		log.Fatalf("%v", err)
 	}
 	addRepoToConfig(repo)
 }
@@ -53,41 +56,40 @@ func addCmd(repo string) {
 func listCmd() {
 	config := readConfig()
 	for _, repo := range config.Repos {
-		fmt.Println(repo)
+		fmt.Println(repo.Display())
 	}
 }
 
 func baseCmd() {
 	config := readConfig()
 	for i, repo := range config.Repos {
-		log.SetPrefix(fmt.Sprintf("[%s]: ", repo))
-
-		if !isValidRepoPath(repo) {
-			log.Fatalf("repo path is invalid: %v", repo)
+		resolved, err := repo.Resolve()
+		if err != nil {
+			log.Fatalf("repo is invalid: %v", err)
 		}
+		log.SetPrefix(fmt.Sprintf("[%s]: ", resolved.DisplayPath()))
 
 		if i > 0 {
 			log.Printf("sleeping for %d seconds...\n", config.SleepDuration)
 			time.Sleep(time.Duration(config.SleepDuration) * time.Second)
 		}
 
-		if notExistRepo(repo) {
-			cloneRepo(repo)
+		if notExistRepo(resolved) {
+			cloneRepo(resolved)
 		} else {
-			updateRepo(repo)
+			updateRepo(resolved)
 		}
 	}
 }
 
-func cloneRepo(repo string) {
+func cloneRepo(repo ResolvedRepo) {
 	changeWorkDirToRoot()
 	cloneCmd := "git"
-	// cloneArgs := []string{"clone", "--mirror", fmt.Sprintf("https://github.com/%s", repo), repo}
-	cloneArgs := []string{"clone", "-v", fmt.Sprintf("git@github.com:%s.git", repo), repo}
+	cloneArgs := []string{"clone", "-v", repo.CloneURL, repo.LocalPath}
 	runCommand(cloneCmd, cloneArgs)
 }
 
-func updateRepo(repo string) {
+func updateRepo(repo ResolvedRepo) {
 	changeWorkDirToRepo(repo)
 	updateCmd := "git"
 	// updateArgs := []string{"remote", "-v", "update"}
@@ -105,8 +107,8 @@ func changeWorkDirToRoot() {
 	log.Printf("change work directory to %v\n", dir)
 }
 
-func changeWorkDirToRepo(repo string) {
-	path := filepath.Join(getRootPath(), repo)
+func changeWorkDirToRepo(repo ResolvedRepo) {
+	path := filepath.Join(getRootPath(), repo.LocalPath)
 	err := os.Chdir(path)
 	if err != nil {
 		log.Fatalf("could not change work directory: %v", err)
@@ -124,8 +126,8 @@ func runCommand(cmd string, args []string) {
 	log.Println(string(output))
 }
 
-func notExistRepo(repo string) bool {
-	path := filepath.Join(getRootPath(), repo)
+func notExistRepo(repo ResolvedRepo) bool {
+	path := filepath.Join(getRootPath(), repo.LocalPath)
 	_, err := os.Stat(path)
 	return os.IsNotExist(err)
 }
